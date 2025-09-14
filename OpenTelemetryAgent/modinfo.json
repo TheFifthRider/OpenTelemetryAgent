@@ -1,0 +1,17 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "opentelemetryagent",
+    "name": "OpenTelemetryAgent",
+    "authors": [
+        "TheFifthRider"
+    ],
+    "description": "Utilizes Grafana Alloy to emit telemetry data to a local Grafana instance or the cloud.",
+    "version": "1.0.0",
+    "website": "https://github.com/TheFifthRider/LogSplitter",
+    "side": "Server",
+    "requiredOnClient": false,
+    "requiredOnServer": false,
+    "dependencies": {
+    }
+}
