@@ -8,10 +8,11 @@
     ],
     "description": "Utilizes Grafana Alloy to emit telemetry data to a local Grafana instance or the cloud.",
     "version": "1.0.0",
-    "website": "https://github.com/TheFifthRider/LogSplitter",
+    "website": "https://github.com/TheFifthRider/OpenTelemetryAgent",
     "side": "Server",
     "requiredOnClient": false,
     "requiredOnServer": false,
     "dependencies": {
+        "game": ""
     }
 }
