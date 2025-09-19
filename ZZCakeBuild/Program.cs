@@ -74,6 +74,10 @@ public sealed class BuildTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
+        context.EnsureDirectoryExists($"../{BuildContext.ProjectName}/{BuildContext.ProjectName}/bin");
+        context.CleanDirectory($"../{BuildContext.ProjectName}/{BuildContext.ProjectName}/bin");
+        context.EnsureDirectoryExists($"../{BuildContext.ProjectName}/{BuildContext.ProjectName}/obj");
+        context.CleanDirectory($"../{BuildContext.ProjectName}/{BuildContext.ProjectName}/obj");
         context.DotNetClean($"../{BuildContext.ProjectName}/{BuildContext.ProjectName}.csproj",
             new DotNetCleanSettings
             {
@@ -94,7 +98,7 @@ public sealed class BuildTask : FrostingTask<BuildContext>
 public sealed class PackageTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
-    {
+    { 
         context.EnsureDirectoryExists("../Releases");
         context.CleanDirectory("../Releases");
         context.EnsureDirectoryExists($"../Releases/{context.Name}");

@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <PackageReference Include="Grafana.OpenTelemetry.Base" Version="1.2.0" />
-    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.1" />
     <Reference Include="$(VINTAGE_STORY)/*.dll">
       <Private>false</Private>
     </Reference>
